@@ -76,9 +76,7 @@
         <div>
             <script>
                 var hackathonDate = new Date("Oct 29, 2022 00:00:00").getTime();
-                var x = setInterval(setTime(), 1000);
-
-                function setTime(){
+                var x = setInterval(function(){
                     var today = new Date().getTime();
 
                     //distance between now and the hackathon date:
@@ -92,9 +90,10 @@
 
                     document.getElementById("time").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
-                }
+                }, 1000);
             </script>
         </div>
+        <button>Register Now</button>
     </div>
 
     <!-- Footer Section -->
