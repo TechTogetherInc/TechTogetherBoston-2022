@@ -64,7 +64,7 @@
     <!-- Sponsor Section -->
     <div>
         <h1>Sponsors</h1>
-        <img src="#" alt="Sponsor logo" />
+        <a href="https://www.slalombuild.com/"><img src="assets/sponsorship logo/Slalom_build.png" alt="Slalom_Build" /></a>
         <img src="#" alt="Sponsor logo" />
         <img src="#" alt="Sponsor logo" />
     </div>
@@ -72,6 +72,29 @@
     <!-- Countdown Section -->
     <div>
         <h1>Tech Together Boston Starts In</h1>
+        <p id="time"></p>
+        <div>
+            <script>
+                var hackathonDate = new Date("Oct 29, 2022 00:00:00").getTime();
+                var x = setInterval(setTime(), 1000);
+
+                function setTime(){
+                    var today = new Date().getTime();
+
+                    //distance between now and the hackathon date:
+                    var difference = hackathonDate - today;
+
+                    //calculate days, hours, minutes and seconds 
+                    var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                    document.getElementById("time").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+                }
+            </script>
+        </div>
     </div>
 
     <!-- Footer Section -->
