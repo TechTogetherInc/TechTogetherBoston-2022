@@ -1,0 +1,54 @@
+/* button and rounded button styles */
+.button{
+    border: none; 
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rounded{
+    border-radius: 25px;
+}
+
+/* style for the register now button */
+.register{
+    background-color: D36C5A;
+    color: white;
+}
+
+/* syle for bats */
+.bat{
+    text-align: right;
+}
+
+/* style for witch and sponsors */
+.witch_sponsor{
+    display: flex;
+}
+
+/* to do
+figure out how to display the sponsors and the hat in the center
+*/
+.witch_sponsor > *{
+    /* width: 20%; */
+    justify-content: center;
+    /* margin: 10px; */
+}
+
+.sponsor_logos{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.sponsor_logos > div{
+    margin: 24px;
+    border: 1px solid #777;
+    background-color: 66B6CC;
+}
+
+/* countdown section */
+.countdown{
+    align-items: center;
+}
