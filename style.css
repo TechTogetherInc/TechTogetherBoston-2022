@@ -32,17 +32,25 @@
 /* to do
 figure out how to display the sponsors and the hat in the center
 */
-.witch_sponsor > *{
-    /* width: 20%; */
-    justify-content: center;
-    /* margin: 10px; */
+.witch{
+    position: relative;
+    width: 100%;
+    left: 15%;
+    bottom: 10%;
+}
+.sponsors{
+    text-align: center;
+    font-size: 130%;
 }
 
 .sponsor_logos{
+    margin-left: 15%;
+    margin-right: 15%;
     display: inline-flex;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    
 }
 
 .sponsor_logos > div{
@@ -50,6 +58,7 @@ figure out how to display the sponsors and the hat in the center
     border: 1px solid #777;
     background-color: 66B6CC;
 }
+
 
 /* countdown section */
 .countdown{
