@@ -4,6 +4,8 @@
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    width: 20%;
+    height: auto;
 }
 
 .rounded{
@@ -14,6 +16,7 @@
 .register{
     background-color: D36C5A;
     color: white;
+    font-size: 120%;
 }
 
 /* syle for bats */
@@ -50,5 +53,15 @@ figure out how to display the sponsors and the hat in the center
 
 /* countdown section */
 .countdown{
-    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.time{
+    font-size: 400%;
+    font-weight: 300%;
+}
+
+.bucket{
+    text-align: right;
 }
