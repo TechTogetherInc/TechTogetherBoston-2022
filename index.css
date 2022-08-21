@@ -1,0 +1,119 @@
+body, button {
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+
+/* FAQ */
+
+.FAQ {
+    background-color: #727AD3;
+    color: white;
+}
+
+.FAQ .FAQ-row {
+    display: flex;
+}
+
+.FAQ .FAQ-column {
+    flex: 50%;
+}
+
+.FAQ .FAQ-asset {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    margin-bottom: -20vh;
+}
+
+.FAQ .FAQ-heading {
+    text-align: center;
+    padding: 5vh;
+}
+
+.FAQ .FAQ-question-header {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.FAQ .FAQ-answer {
+    font-size: 1.2rem;
+}
+
+.FAQ .FAQ-question-div {
+    margin: 5vh 3vh 5vh 3vh;
+}
+
+.FAQ .FAQ-hr {
+    margin-top: 5vh;
+}
+
+.FAQ .FAQ-answer-div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    margin: 1vh 5vh;
+}
+
+/* mobile screens */
+
+@media screen and (min-width: 320px) {
+
+    .FAQ .FAQ-asset {
+        width: 40vh;
+        margin-bottom: -20vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: block;
+    }
+}
+
+/* tablet screens */
+
+@media screen and (min-width: 481px) {
+    .FAQ .FAQ-asset {
+        width: 65vh;
+        margin-bottom: -18vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: block;
+    }
+}
+
+/* laptop screens */
+
+@media screen and (min-width: 769px) {
+    .FAQ .FAQ-asset {
+        width: 100vh;
+        margin-bottom: -20vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: flex;
+    }
+}
+
+/* desktop screens */
+@media screen and (min-width: 1025px) {
+    .FAQ .FAQ-asset {
+        width: 100vh;
+        margin-bottom: -20vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: flex;
+    }
+}
+
+
+
+
+
