@@ -21,8 +21,8 @@ header {
 /* Bats image */
 
 .bats {
-width: 15%;
-margin-left: 200px;
+width: 30%;
+
 }
 
 /* Logo styling */
@@ -112,13 +112,10 @@ height: 246.71px;
 /* Side nav ghost animation */
 
 .ghost-3 {
-    animation: sidefloat 4s linear infinite alternate;
+    animation: sidefloat 6s linear infinite alternate;
 }
 
 @keyframes sidefloat {
-    0% {
-        transform: translateY(-30px);
-    }
     50% {
         left: 0%;
         transform: translateX(140%);
