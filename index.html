@@ -1,36 +1,65 @@
-<!doctyh1e html>
-<html>
-  <head>
-    <title>Tech Together Boston Event h1age</title>
-    <meta name="descrih1tion" content="Our first h1age" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="keywords" content="Lets go TTB" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTogether Boston</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-  </head>
+    <link rel="stylesheet" href="index.css" />
+</head>
 
-  <body>
-    <!-- Header Section -->
+<body>
     <header>
-      <img src="#" alt="witch byte" />
-      <h2></h2>
-      <p></p>
-      <button></button>
-      <nav>
-        <ul>
-          <img src="#" alt="TT logo" />
-          <li>About</li>
-          <li>Apply</li>
-          <li>FAQ</li>
-        </ul>
-        <img src="#" alt="mlh logo" />
-      </nav>
+        <!-- TT and MLH Logo -->
+    <nav>
+    <ul>
+        <li><img id="main" class="openbtn" onclick="openNav()" src="./img/ttb-logo.svg" alt="TechTogether Boston logo"></li>
+        
+        <!-- Bat image -->
+        
+        <img class="bats" src="/img/bats.svg" alt="flying bats image">
+
+        <li class="mlh-logo"><a href="https://mlh.io/seasons/2023/events" target="_blank"><img src="./img/mlh banner.svg" alt="MLH Banner logo"></a></li>
+    </ul>
+    </nav>   
+        <!-- Side Navigation -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mySidenav" class="sidenav">
+            <img class="ghost-3" src="./img/ghost byte.svg">
+            <a href="#about-section" id="about"><img src="./img/candy 7.svg" alt="candy">About</a>
+            <a href="#faq-section" id="faq"><img src="./img/candy 1.svg" alt="candy">FAQ's</a>
+            <a href="sponsor-section" id="sponsor"><img src="./img/candy 6.svg" alt="candy">Sponsors</a>
+            <a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank" id="register"><img src="./img/candy 8.svg" alt="candy">Register</a>
+          </div>
+      </div>
+
+     
+     
+      <!-- Hackathon Information -->
+
+    <section class="hack-info">
+        <h1>TechTogether<br> Boston</h1>
+        <h3>October 29-30, 2022 @ Boston University</h3>
+        <button class="registerbtn"><a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank">Register Now</a></button>
+    </section>
+
+    <!-- Byte Images -->
+
+    <section class="byte">
+        <img id="ghost-byte1" class="ghost-1" src="./img/ghost byte.png">
+        <img id="witch-byte" src="./img/witch-byte.svg">
+        <img class="ghost-2" src="./img/ghost byte.png">
+    </section>
     </header>
 
     <!-- About Section -->
@@ -467,9 +496,17 @@
     </div>
 
     <!-- Footer Section -->
-    <div>
-      <p>This is the footer</p>
-    </div>
+    <footer>
+      <p>Still have questions? <br> Contact email@email.com</p>
+      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>
+
+      <section class="icons">
+      <a href="https://www.instagram.com/techtogetherboston/ " target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+      <a href="https://www.facebook.com/TechTogetherBoston/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.linkedin.com/company/techtogetherboston/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </section>
+      
+  </footer>
 
     <script src="index.js"></script>
   </body>
