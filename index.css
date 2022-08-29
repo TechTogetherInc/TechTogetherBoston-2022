@@ -436,8 +436,7 @@ i:hover {
     opacity: 0.7;
 }
 
-  
-  /* Responsive Layout for smaller screens */
+  /* Responsive layout */
   
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
