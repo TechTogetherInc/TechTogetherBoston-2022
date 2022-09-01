@@ -224,18 +224,18 @@ body, button {
 
 /* Landing page styling */
 
-* {
+.landing-section * {
     box-sizing: border-box;
 }
 /* Background gradient */
 
-body {
+.landing-section {
     background: linear-gradient(180deg, rgba(32,32,76,1) 55%, rgba(229,229,235,1) 100%);
 }
 
 /* Graveyard image */
 
-header {
+.landing-section header {
     background: url(../img/landing-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -251,18 +251,18 @@ width: 30%;
 
 /* Logo styling */
 
-ul {
+.landing-section ul {
     display: flex;
     justify-content: space-between;
 }
 
-li {
+.landing-section li {
     list-style: none;
     color: white;
     display: inline;
 }
 
-a {
+.landing-section a {
     text-decoration: none;
     color: white;
 }
@@ -276,12 +276,12 @@ a {
 
 /* Heading Styling */
 
-h1 {
+.hack-info h1 {
     color: white;
     font-size: 100px;
 }
 
-h3 {
+.hack-info h3 {
     color: white;
     font-size: 50px;
     font-weight: 200;
@@ -411,7 +411,7 @@ div .ghost-3 {
 
   /* Footer Styling */
 
-  footer {
+  .footer-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -423,16 +423,16 @@ div .ghost-3 {
     background: linear-gradient(180deg, rgba(196,115,120,1) 55%, rgba(202,112,109,1) 100%);
 }
 
-a {
+.footer-section a {
     text-decoration: none;
     color: white;
 }
 
-i {
+.icons {
     font-size: 40px;
     width: 45px;
 }
-i:hover {
+.icons i:hover {
     opacity: 0.7;
 }
 
