@@ -237,7 +237,7 @@ body, button {
 /* Graveyard image */
 
 .landing-section header {
-    background: url(../img/landing-background.svg);
+    background: url(./img/landing-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 75% 25%;  
@@ -443,7 +443,7 @@ div .ghost-3 {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-
+ 
   
 
 
