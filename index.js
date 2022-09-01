@@ -68,4 +68,4 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("ghost-byte1").style.marginLeft = "0";
   }
-}
+
