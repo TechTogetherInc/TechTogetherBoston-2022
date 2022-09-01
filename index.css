@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body, button {
+    font-family: 'Barlow', sans-serif;
+}
+
+
+/* About US */
+
+.ABOUT {
+    background: linear-gradient(#0B0E1E, #41477F);
+    color: white;
+}
+
+.ABOUT .ABOUT-heading {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.ABOUT .ABOUT-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.ABOUT .ABOUT-text-contents {
+    text-align: justify;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    padding-top: 2vh;
+}
+
+.ABOUT .ABOUT-video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    height: 56.25vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    border: none;
+}
+
+
+/* FAQ */
+
+.FAQ {
+    background: linear-gradient(#41477F, #727BD7);
+    color: white;
+}
+
+.FAQ .FAQ-row {
+    display: flex;
+}
+
+.FAQ .FAQ-column {
+    flex: 50%;
+}
+
+.FAQ .FAQ-asset {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    margin-bottom: -20vh;
+}
+
+.FAQ .FAQ-heading {
+    text-align: center;
+    padding: 5vh;
+}
+
+.FAQ .FAQ-question-header {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 80%;
+    cursor: pointer;
+}
+
+.FAQ .FAQ-answer {
+    font-size: 1.2rem;
+}
+
+.FAQ .FAQ-question-div {
+    margin: 5vh 3vh 5vh 3vh;
+}
+
+.FAQ .FAQ-hr {
+    margin-top: 5vh;
+}
+
+.FAQ .FAQ-answer-div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    margin: 1vh 5vh;
+}
+
+/* Volunteer */
+
+.VOLUNTEER {
+    background: linear-gradient(#727BD7, #9884CC);
+    color: white;
+}
+
+.VOLUNTEER .VOLUNTEER-heading {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.VOLUNTEER .VOLUNTEER-cards-container {
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.VOLUNTEER .VOLUNTEER-card {
+    margin: 5vh;
+    padding: 3vh;
+    width: 30%;
+    border: solid 1px #727AD3;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+}
+
+.VOLUNTEER .VOLUNTEER-card-title {
+    font-size: 1.5rem;;
+    font-weight: 800;
+    text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+}
+
+.VOLUNTEER .VOLUNTEER-card-desc {
+    padding-top: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+
+.VOLUNTEER .VOLUNTEER-card-btn {
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.VOLUNTEER .VOLUNTEER-card-btn-text {
+    padding: 1vh 2vh;
+    background-color: white;
+    border-radius: 5vh;
+    color: #353F95;
+    font-size: 1.2rem;;
+    font-weight: 800;
+}
+
+
+
+/* mobile screens */
+
+@media screen and (min-width: 320px) {
+
+    .FAQ .FAQ-asset {
+        width: 40vh;
+        margin-bottom: -20vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: block;
+    }
+}
+
+/* tablet screens */
+
+@media screen and (min-width: 481px) {
+    .FAQ .FAQ-asset {
+        width: 65vh;
+        margin-bottom: -18vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: block;
+    }
+}
+
+/* laptop screens */
+
+@media screen and (min-width: 769px) {
+    .FAQ .FAQ-asset {
+        width: 100vh;
+        margin-bottom: -20vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: flex;
+    }
+}
+
+/* desktop screens */
+@media screen and (min-width: 1025px) {
+    .FAQ .FAQ-asset {
+        width: 100vh;
+        margin-bottom: -20vh;
+    }
+
+    .FAQ .FAQ-row {
+        display: flex;
+    }
+}
+
+
+/* Landing page styling */
+
+* {
+    box-sizing: border-box;
+}
+/* Background gradient */
+
+body {
+    background: linear-gradient(180deg, rgba(32,32,76,1) 55%, rgba(229,229,235,1) 100%);
+}
+
+/* Graveyard image */
+
+header {
+    background: url(../img/landing-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 75% 25%;  
+}
+
+/* Bats image */
+
+.bats {
+width: 30%;
+
+}
+
+/* Logo styling */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: white;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Align hackathon information to the center */
+
+.hack-info {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+/* Heading Styling */
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+h3 {
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    margin-top: 1em;
+    
+}
+
+/* Register button styling */
+
+.registerbtn a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.registerbtn {
+    background: rgb(197, 106, 73);
+    height: 60px;
+    width: 190px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.registerbtn:hover {
+    border: solid 3px rgb(218, 218, 57);
+}
+
+.byte {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Float animation for byte ghosts */
+
+.ghost-1, .ghost-2 {
+animation: float 2s infinite ease-in-out;
+z-index: 999;
+pointer-events: none;
+width: 226.16px;
+height: 246.71px;
+}
+
+@keyframes float {
+    50%{
+        transform: translateY(-30px);
+      }
+}
+
+    /* Navigation icons animation */
+
+    #mySidenav a img:hover {
+        animation: move 3s;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+             transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+      
+    }
+
+/* Navigation Links */
+
+#mySidenav a {
+   padding: 25px; 
+   width: 100px;
+   font-size: 25px; 
+   font-weight: bold;
+   color: white;
+  } 
+  
+#mySidenav a img {
+  height: 90px;
+  width: 100px;
+}
+
+div .ghost-3 {
+    padding: 10px;
+    height: 100px;
+}
+
+/* sidebar menu */
+
+.sidebar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 30px; /* content 60px from top */
+    transition: 0.5s; /*slide effect */
+  }
+  
+  .sidebar a {
+    display: block;
+  }
+  
+  /* close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* open button */
+  .openbtn {
+    cursor: pointer;
+  }
+
+
+  /* Footer Styling */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid white;
+    width: 100%;
+    padding: 10px 15px;
+    color: white;
+    background: linear-gradient(180deg, rgba(196,115,120,1) 55%, rgba(202,112,109,1) 100%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    font-size: 40px;
+    width: 45px;
+}
+i:hover {
+    opacity: 0.7;
+}
+
+  
+  /* Responsive Layout for smaller screens */
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  
+
+
+
+

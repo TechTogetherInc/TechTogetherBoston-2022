@@ -1,83 +1,641 @@
-<!doctyh1e html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Tech Together Boston Event h1age</title>
-    <meta name="descrih1tion" content="Our first h1age">
-    <meta name="keywords" content="Lets go TTB">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Lets go TTB" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>TechTogether Boston</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
-        <img src="#" alt="witch byte">
-        <h2></h2>
-        <p></p>
-        <button></button>
-        <nav>
-            <ul>
-             <img src="#" alt="TT logo">
-                <li>About</li>
-                <li>Apply</li>
-                <li>FAQ</li>
-            </ul>
-            <img src="#" alt="mlh logo">
-        </nav>
+        <!-- TT and MLH Logo -->
+    <nav>
+    <ul>
+        <li><img id="main" class="openbtn" onclick="openNav()" src="./img/ttb-logo.svg" alt="TechTogether Boston logo"></li>
+        
+        <!-- Bat image -->
+        
+        <img class="bats" src="/img/bats.svg" alt="flying bats image">
+
+        <li class="mlh-logo"><a href="https://mlh.io/seasons/2023/events" target="_blank"><img src="./img/mlh banner.svg" alt="MLH Banner logo"></a></li>
+    </ul>
+    </nav>   
+        <!-- Side Navigation -->
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mySidenav" class="sidenav">
+            <img class="ghost-3" src="./img/ghost byte.svg">
+            <a href="#about-section" id="about"><img src="./img/candy 7.svg" alt="candy">About</a>
+            <a href="#faq-section" id="faq"><img src="./img/candy 1.svg" alt="candy">FAQ's</a>
+            <a href="sponsor-section" id="sponsor"><img src="./img/candy 6.svg" alt="candy">Sponsors</a>
+            <a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank" id="register"><img src="./img/candy 8.svg" alt="candy">Register</a>
+          </div>
+      </div>
+
+     
+     
+      <!-- Hackathon Information -->
+
+    <section class="hack-info">
+        <h1>TechTogether<br> Boston</h1>
+        <h3>October 29-30, 2022 @ Boston University</h3>
+        <button class="registerbtn"><a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank">Register Now</a></button>
+    </section>
+
+    <!-- Byte Images -->
+
+    <section class="byte">
+        <img id="ghost-byte1" class="ghost-1" src="./img/ghost byte.png">
+        <img id="witch-byte" src="./img/witch-byte.svg">
+        <img class="ghost-2" src="./img/ghost byte.png">
+    </section>
     </header>
-    
+
     <!-- About Section -->
-    <div>
-        <h1>About Us</h1>
-        <div>
-            This will have the video
-        </div>
-        <div>
-            <p>TechTogether Boston is a 2-day hackathon for people of marginalized genders hosted by community leaders across Massachusetts. The event will take place October 29-30th in the George Sherman Union at Boston University.
-            Join us for two full days of skill-building and professional development workshops, networking with recruiters, and of course - fun activities like face masks. Each attendee has the option to work with a team to build a project like a website or mobile application with the support of our mentors. Whether it's your first hackathon or your 100th, everyone has something to learn and contribute at this event!</p>
-        </div>
+    <div class="ABOUT" id="about-section">
+      <h1 class="ABOUT-heading">About Us</h1>
+      <div class="ABOUT-contents">
+        <p class="ABOUT-text-contents">
+
+          TechTogether Boston is a 2-day hackathon for people of marginalized
+          genders hosted by community leaders across Massachusetts. The event
+          will take place October 29-30th in the George Sherman Union at Boston
+          University.
+        </p>
+
+        <p>
+
+        <p class="ABOUT-text-contents">
+
+          Join us for two full days of skill-building and professional
+          development workshops, networking with recruiters, and of course - fun
+          activities like face masks. Each attendee has the option to work with
+          a team to build a project like a website or mobile application with
+          the support of our mentors. Whether it's your first hackathon or your
+          100th, everyone has something to learn and contribute at this event!
+        </p>
+        <iframe
+
+          width="420"
+          height="315"
+
+          class="ABOUT-video"
+
+          src="https://www.youtube.com/embed/8XeKABwrokY"
+        >
+        </iframe>
+      </div>
     </div>
-    
+
     <!-- Theme Section -->
     <div>
-        <h1>Theme/Tracks</h1>
-        <p>Theme description</p>
+      <h1>Theme/Tracks</h1>
+      <p>Theme description</p>
     </div>
 
     <!-- FAQ Section -->
-    <div>
-        <h1>No Question is Dumb</h1>
-        <!-- Look up "accordion HTML to see how to code it" -->
+
+    <div class="FAQ" id="faq-section">
+
+    <div class="FAQ">
+
+      <img
+        class="FAQ-asset"
+        src="./img/FAQ-title-asset.svg"
+        alt="FAQ-title-asset"
+      />
+      <h1 class="FAQ-heading">Frequently Asked Questions</h1>
+
+      <div class="FAQ-row">
+        <div class="FAQ-column">
+          <!-- Question 1 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              Where do I submit my solution/project?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <!-- the style for the arrows is just to see the arrow when background is white by deafult, erase later -->
+            
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                Your project will be submitted through Devpost. Click on the
+                "Submit Project" button at the top of the site to access the
+                Devpost. Your submission must include a video (no longer than 2
+
+                minutes) that showcases your project, a basic description of your
+                project, and the challenge(s) for which you want your project to
+                be considered.
+
+                minutes) that showcases your project, a basic description of
+                your project, and the challenge(s) for which you want your
+                project to be considered.
+
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+
+          <!-- Question 2 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              Where do I go to attend a session?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+
+                The locations of all workshops, activities, and events throughout
+                the weekend will be on the event schedule.
+
+                The locations of all workshops, activities, and events
+                throughout the weekend will be on the event schedule.
+
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 3 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              How do I find a mentor for help?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                Find a mentor at the mentoring table or send a request for a
+                mentor through a form (more details to come). We will also have
+                mentors walking around tables.
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 4 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              What is the project submission deadline?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                Make sure to check the event schedule to stay up to date on
+                important hackathon deadlines and everything you need to know
+                about what's going on throughout the weekend! Announcements and
+                reminders will also be broadcasted on the Discord server in case
+                you forget.
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 5 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              How do I find a team to join?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+
+                All teams must be between 2-4 people. While you have the option to
+                work alone, if you want to submit your project you must work with
+                at least one other person. Don't worry if you don't have a
+                team—you'll have plenty of opportunities to find one! TechTogether
+                will be hosting a variety of team formation activities throughout
+                the first day, and we will also have a space dedicated to team
+                formation during the event.
+
+                All teams must be between 2-4 people. While you have the option
+                to work alone, if you want to submit your project you must work
+                with at least one other person. Don't worry if you don't have a
+                team—you'll have plenty of opportunities to find one!
+                TechTogether will be hosting a variety of team formation
+                activities throughout the first day, and we will also have a
+                space dedicated to team formation during the event.
+
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 6 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              When and where will the hackathon be held?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                The hackathon is from Oct 28th (virtually for 1-day) to Oct 30th
+                date. This event will be in-person at George Sherpard Union.
+
+                Participants can start arriving at 7 am on Oct 29th and the event
+                will conclude at 4 pm on Oct 30th. Participants will need to
+                arrange their own transportation to and from the event. (Feel free
+                to include transportation info such as public transportation
+                nearby, directions, and more)
+
+                Participants can start arriving at 7 am on Oct 29th and the
+                event will conclude at 4 pm on Oct 30th. Participants will need
+                to arrange their own transportation to and from the event. (Feel
+                free to include transportation info such as public
+                transportation nearby, directions, and more)
+
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+        </div>
+        <!-- end of FAQ-column -->
+
+        <div class="FAQ-column">
+
+          <!-- Question 7 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              What do I need to bring to the hackathon?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+
+                We recommend bringing basic hygiene products, clothes, a sleeping
+                bag with a pillow and blanket, and laptops/phones with chargers
+                (Feel free to add more things)
+
+                We recommend bringing basic hygiene products, clothes, a
+                sleeping bag with a pillow and blanket, and laptops/phones with
+                chargers (Feel free to add more things)
+
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 8 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">Who can attend?</button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                All people of marginalized genders ages 14+ are welcome! This
+                includes high school, college, bootcamp students, and industry
+                professionals who are cisgender women, transgender men,
+                transgender women, non-binary people, and people of all other
+
+                genders that have been historically left on the sidelines in tech.
+
+                genders that have been historically left on the sidelines in
+                tech.
+
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 9 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">What is a hackathon?</button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                Hackathons are events where people with an interest in tech come
+                together to collaborate on innovative group projects, learn new
+                skills from workshops, and network with their peers.
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 10 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              How much does it cost to attend?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                Our event is free to attend! The only thing we ask for is your
+                time for a weekend full of learning, fun, and networking!
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 11 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+
+              Do I need experience to participate? Do I have to know how to
+              code?
+
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                No experience is needed at all! TechTogether especially welcomes
+                first-time hackers! There will be plenty of beginner-friendly
+                workshops to explore different avenues of tech and level up your
+                technical skills.
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 12 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              Do I have to submit a hackathon project?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                Submitting a project is optional. While you're more than welcome
+                to attend the hackathon just for the workshops, we hope that
+                you'll embrace the full hackathon experience by working on a
+                project with a team.
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
+          <!-- Question 13 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              Do I have to stay at the event the entire time?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                No, you are free to leave the venue and come back anytime you
+                want. Our venue check-in opens at 7 am (Oct 29th) and doesn't
+                close until 4 pm (Oct 30th)
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+        </div>
+        <!-- end of FAQ-column -->
+      </div>
+      <!-- end of FAQ-row -->
     </div>
+    <!-- end of FAQ -->
 
     <!-- Volunteer Section -->
-    <div>
-        <h1>Share it Forward</h1>
-        <div>
 
-        </div>
-    </div>
-    
-    <!-- Sponsor Section -->
     <div>
-        <h1>Sponsors</h1>
-        <img src="#" alt="Sponsor logo" />
-        <img src="#" alt="Sponsor logo" />
-        <img src="#" alt="Sponsor logo" />
+      <h1>Share it Forward</h1>
+      <div>
+        <!-- Mentor Hackers -->
+        <div style="border: solid 1px red">
+          <p>Mentor Hackers 👨‍💻</p>
+          <p>
+
+    <div class="VOLUNTEER">
+      <h1 class="VOLUNTEER-heading">Share it Forward</h1>
+      <div class="VOLUNTEER-cards-container">
+        <!-- Mentor Hackers -->
+        <div class="VOLUNTEER-card">
+          <p class="VOLUNTEER-card-title">Mentor Hackers 👨‍💻</p>
+          <p class="VOLUNTEER-card-desc">
+
+            <!-- TODO: Replace with the description from programming team -->
+            Reference site about Lorem Ipsum, giving information on its origins,
+            as well as a random Lipsum generator.
+          </p>
+          <!-- TODO: change to valid form link -->
+
+          <a href="https://www.techtogether.io/" target="_blank">
+            <p>Become a mentor</p>
+          </a>
+        </div>
+
+        <!-- Workshop Hosts -->
+        <div style="border: solid 1px red">
+          <p>Workshop Hosts 🎤</p>
+          <p>
+
+          <div class="VOLUNTEER-card-btn">
+            <a href="https://www.techtogether.io/" target="_blank">
+              <p class="VOLUNTEER-card-btn-text">Become a mentor</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Workshop Hosts -->
+        <div class="VOLUNTEER-card">
+          <p class="VOLUNTEER-card-title">Workshop Hosts 🎤</p>
+          <p class="VOLUNTEER-card-desc">
+
+            <!-- TODO: Replace with the description from programming team -->
+            Reference site about Lorem Ipsum, giving information on its origins,
+            as well as a random Lipsum generator.
+          </p>
+          <!-- TODO: change to valid form link -->
+
+          <a href="https://www.techtogether.io/" target="_blank">
+            <p>Host a workshop</p>
+          </a>
+        </div>
+
+        <!-- Volunteer -->
+        <div style="border: solid 1px red">
+          <p>Volunteer 🙌</p>
+          <p>
+
+          <div class="VOLUNTEER-card-btn">
+            <a href="https://www.techtogether.io/" target="_blank">
+              <p class="VOLUNTEER-card-btn-text">Host a workshop</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Volunteer -->
+        <div class="VOLUNTEER-card">
+          <p class="VOLUNTEER-card-title">Volunteer 🙌</p>
+          <p class="VOLUNTEER-card-desc">
+            <!-- TODO: Replace with the description from programming team -->
+            Reference site about Lorem Ipsum, giving information on its origins,
+            as well as a random Lipsum generator.
+          </p>
+          <!-- TODO: change to valid form link -->
+          <div class="VOLUNTEER-card-btn">
+            <a href="https://www.techtogether.io/" target="_blank">
+              <p class="VOLUNTEER-card-btn-text">Become a Volunteer</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Judge -->
+        <div class="VOLUNTEER-card">
+          <p class="VOLUNTEER-card-title">Judge 🧑‍⚖️</p>
+          <p class="VOLUNTEER-card-desc">
+
+            <!-- TODO: Replace with the description from programming team -->
+            Reference site about Lorem Ipsum, giving information on its origins,
+            as well as a random Lipsum generator.
+          </p>
+          <!-- TODO: change to valid form link -->
+
+          <a href="https://www.techtogether.io/" target="_blank">
+            <p>Become a Volunteer</p>
+          </a>
+        </div>
+
+        <!-- Judge -->
+        <div style="border: solid 1px red">
+          <p>Judge 🧑‍⚖️</p>
+          <p>
+            <!-- TODO: Replace with the description from programming team -->
+            Reference site about Lorem Ipsum, giving information on its origins,
+            as well as a random Lipsum generator.
+          </p>
+          <!-- TODO: change to valid form link -->
+          <a href="https://www.techtogether.io/" target="_blank">
+            <p>Become a judge</p>
+          </a>
+        </div>
+
+          <div class="VOLUNTEER-card-btn">
+            <a href="https://www.techtogether.io/" target="_blank">
+              <p class="VOLUNTEER-card-btn-text">Become a judge</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- Sponsor Section -->
     
+    <div id="sponsor-section">
+        <div><img src="assets/bats.svg" alt=""></div>
+        <div><img src="assets/witch hat.svg" alt=""></div>
+        <h1>Sponsors</h1>
+        <a href="https://www.slalombuild.com/"><img src="" alt="Slalom_Build" /></a>
+        <img src="#" alt="Sponsor logo" />
+        <img src="#" alt="Sponsor logo" />
+
+    <div>
+      <div><img src="assets/bats.svg" alt="" /></div>
+      <div><img src="assets/witch hat.svg" alt="" /></div>
+      <h1>Sponsors</h1>
+      <a href="https://www.slalombuild.com/"
+        ><img src="" alt="Slalom_Build"
+      /></a>
+      <img src="#" alt="Sponsor logo" />
+      <img src="#" alt="Sponsor logo" />
+
+    </div>
+
     <!-- Countdown Section -->
     <div>
         <h1>Tech Together Boston Starts In</h1>
+        <p id="time"></p>
+        <div>
+            <script>
+                var hackathonDate = new Date("Oct 29, 2022 00:00:00").getTime();
+                var x = setInterval(function(){
+                    var today = new Date().getTime();
+
+                    //distance between now and the hackathon date:
+                    var difference = hackathonDate - today;
+
+                    //calculate days, hours, minutes and seconds 
+                    var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                    document.getElementById("time").innerHTML = days + " : " + hours + " : "
+    + minutes + " : " + seconds;
+                }, 1000);
+            </script>
+        </div>
+        <button>Register Now</button>
+        <div><img src="assets/full bucket.svg" alt=""></div>
     </div>
 
     <!-- Footer Section -->
-    <div>
-        <p>This is the footer</p>
-    </div>
+    <footer>
+    
+      <p>Still have questions? <br> Contact email@email.com</p>
+      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>
 
-</body>
+      <section class="icons">
+      <a href="https://www.instagram.com/techtogetherboston/ " target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+      <a href="https://www.facebook.com/TechTogetherBoston/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.linkedin.com/company/techtogetherboston/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </section>
+      
+  </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
