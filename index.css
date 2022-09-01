@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a:link {
     text-decoration: none;
 }
 
-body, button {
+.FAQ body, button {
     font-family: 'Barlow', sans-serif;
 }
 
@@ -225,9 +226,6 @@ body, button {
 
 /* Landing page styling */
 
-.landing-section * {
-    box-sizing: border-box;
-}
 /* Background gradient */
 
 .landing-section {
@@ -237,7 +235,7 @@ body, button {
 /* Graveyard image */
 
 .landing-section header {
-    background: url(../img/landing-background.svg);
+    background: url(./img/landing-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 75% 25%;  
@@ -411,39 +409,34 @@ div .ghost-3 {
 
 
   /* Footer Styling */
-
-  .footer-section {
+ footer {
+    border-top: 5px solid white;
+    padding: 10px 15px;
+    background: linear-gradient(180deg, rgba(196,115,120,1) 55%, rgba(202,112,109,1) 100%);
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px solid white;
-    width: 100%;
-    padding: 10px 15px;
-    color: white;
-    background: linear-gradient(180deg, rgba(196,115,120,1) 55%, rgba(202,112,109,1) 100%);
-}
+ }
 
-.footer-section a {
+ footer a {
     text-decoration: none;
     color: white;
-}
+ }
 
-.icons {
+ .icons {
     font-size: 40px;
-    width: 45px;
-}
-.icons i:hover {
-    opacity: 0.7;
-}
+ }
 
+ .icons i:hover {
+    opacity: 0.7;
+ }
   /* Responsive layout */
   
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-
+ 
   
 
 
