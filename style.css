@@ -44,12 +44,13 @@ figure out how to display the sponsors and the hat in the center
 }
 
 .sponsor_logos{
-    margin-left: 15%;
-    margin-right: 15%;
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    /* box-sizing: border-box; */
     display: inline-flex;
     flex-wrap: wrap;
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     
 }
 
