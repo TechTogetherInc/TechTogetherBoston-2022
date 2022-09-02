@@ -455,10 +455,14 @@ div .ghost-3 {
 }
 
 .sponsor_logos{
-    box-sizing: content-box;
-    width: 100%;
+    padding-top: 5vh;
+    margin-left: 20%;
+    margin-right: auto;
     display: inline-flex;
     flex-wrap: wrap; 
+    justify-content: center;
+    /* padding: 3vh; */
+    width: 80%;
 } 
 
 .sponsor_logos > div{
@@ -476,6 +480,7 @@ div .ghost-3 {
 }
 
 .time{
+    padding: 2%;
     font-size: 400%;
     font-weight: 300%;
 }
