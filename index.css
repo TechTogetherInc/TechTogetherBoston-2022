@@ -8,7 +8,7 @@ a:link {
     text-decoration: none;
 }
 
-.FAQ body, button {
+body, button {
     font-family: 'Barlow', sans-serif;
 }
 
@@ -406,6 +406,85 @@ div .ghost-3 {
   .openbtn {
     cursor: pointer;
   }
+
+  /* style for the background */
+.background_sponsor{
+    background: linear-gradient(#9884CC, #AF7BA0, #C47378);
+}
+
+/* button and rounded button styles */
+.button{
+    border: none; 
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20%;
+    height: auto;
+}
+
+.rounded{
+    border-radius: 25px;
+}
+
+/* style for the register now button */
+.register{
+    background-color: #D36C5A;
+    color: white;
+    font-size: 120%;
+}
+
+/* syle for bats */
+.bat{
+    text-align: right;
+}
+
+/* style for witch and sponsors */
+.witch_sponsor{
+    display: flex;
+}
+
+.witch{
+    position: relative;
+    width: 100%;
+    left: 15%;
+    bottom: 10%;
+}
+
+.sponsors{
+    text-align: center;
+    font-size: 160%;
+}
+
+/* .sponsor_logos{
+    box-sizing: content-box;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap; 
+} 
+
+.sponsor_logos > div{
+    margin: 24px;
+    border: 1px solid #777;
+    background-color: 66B6CC;
+} */
+
+/* countdown section */
+.countdown{
+    text-align: center;
+    color: white;
+    padding: 10%;
+    margin: 10px;
+}
+
+.time{
+    font-size: 400%;
+    font-weight: 300%;
+}
+
+.bucket{
+    text-align: right;
+}
+
 
 
   /* Footer Styling */

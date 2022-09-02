@@ -40,7 +40,7 @@
             <img class="ghost-3" src="./img/ghost byte.svg">
             <a href="#about-section" id="about"><img src="./img/candy 7.svg" alt="candy">About</a>
             <a href="#faq-section" id="faq"><img src="./img/candy 1.svg" alt="candy">FAQ's</a>
-            <a href="sponsor-section" id="sponsor"><img src="./img/candy 6.svg" alt="candy">Sponsors</a>
+            <a href="#sponsor-section" id="sponsor"><img src="./img/candy 6.svg" alt="candy">Sponsors</a>
             <a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank" id="register"><img src="./img/candy 8.svg" alt="candy">Register</a>
           </div>
       </div>
@@ -100,11 +100,11 @@
       </div>
     </div>
 
-    <!-- Theme Section -->
+    <!-- Theme Section
     <div>
       <h1>Theme/Tracks</h1>
       <p>Theme description</p>
-    </div>
+    </div> -->
 
     <!-- FAQ Section -->
 
@@ -493,55 +493,28 @@
       </div>
     </div>
 
-    <!-- Sponsor Section -->
-    
-    <div id="sponsor-section">
-        <div><img src="assets/bats.svg" alt=""></div>
-        <div><img src="assets/witch hat.svg" alt=""></div>
-        <h1>Sponsors</h1>
-        <a href="https://www.slalombuild.com/"><img src="" alt="Slalom_Build" /></a>
-        <img src="#" alt="Sponsor logo" />
-        <img src="#" alt="Sponsor logo" />
+    <div class="background_sponsor">
+      <div class="bat"><img src="assets/bats.svg" alt="bats" width="35%"></div>
+      <div class="witch"><img src="assets/witch hat.svg" alt="witch hat" width="20%"></div>
+      <!-- <div class="sponsors"><h1>Sponsors</h1></div> -->
 
-    <div>
-      <div><img src="assets/bats.svg" alt="" /></div>
-      <div><img src="assets/witch hat.svg" alt="" /></div>
-      <h1>Sponsors</h1>
-      <a href="https://www.slalombuild.com/"
-        ><img src="" alt="Slalom_Build"
-      /></a>
-      <img src="#" alt="Sponsor logo" />
-      <img src="#" alt="Sponsor logo" />
+      <!-- <div class="sponsor_logos">
+          <div><a href="https://www.slalombuild.com/"><img src="" alt="Slalom_Build" width="200" height="200"/></a></div>
+          <div><a href=""><img src="" alt="" width="200" height="200"/></a></div>
+          <div><a href=""><img src="" alt="" width="200" height="200"/></a></div>
+          <div><a href=""><img src="" alt="" width="200" height="200"/></a></div>
+          <div><a href=""><img src="" alt="" width="200" height="200"/></a></div>
+          <div><a href=""><img src="" alt="" width="200" height="200"/></a></div>
+      </div> -->
 
-    </div>
-
-    <!-- Countdown Section -->
-    <div>
-        <h1>Tech Together Boston Starts In</h1>
-        <p id="time"></p>
-        <div>
-            <script>
-                var hackathonDate = new Date("Oct 29, 2022 00:00:00").getTime();
-                var x = setInterval(function(){
-                    var today = new Date().getTime();
-
-                    //distance between now and the hackathon date:
-                    var difference = hackathonDate - today;
-
-                    //calculate days, hours, minutes and seconds 
-                    var days = Math.floor(difference / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-                    document.getElementById("time").innerHTML = days + " : " + hours + " : "
-    + minutes + " : " + seconds;
-                }, 1000);
-            </script>
-        </div>
-        <button>Register Now</button>
-        <div><img src="assets/full bucket.svg" alt=""></div>
-    </div>
+  <!-- Countdown Section -->
+  <div class="countdown">
+      <h1>Tech Together Boston <br> Starts In</h1>
+      <p class="time" id="time"></p>
+      <a href="https://organize.mlh.io/participants/events/8321-techtogether-boston"><button class="button rounded register">Register Now</button></a>
+  </div>
+  <div class="bucket"><img src="assets/full bucket.svg" alt="" width="30%"></div>
+</div>
 
     <!-- Footer Section -->
     
