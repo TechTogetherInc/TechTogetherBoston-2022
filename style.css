@@ -19,7 +19,7 @@
 
 /* style for the register now button */
 .register{
-    background-color: D36C5A;
+    background-color: #D36C5A;
     color: white;
     font-size: 120%;
 }
@@ -54,8 +54,8 @@ figure out how to display the sponsors and the hat in the center
     /* box-sizing: border-box; */
     display: inline-flex;
     flex-wrap: wrap;
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: auto;
     
 }
 
@@ -69,7 +69,9 @@ figure out how to display the sponsors and the hat in the center
 /* countdown section */
 .countdown{
     text-align: center;
-    color: black;
+    color: white;
+    padding: 10%;
+    margin: 10px;
 }
 
 .time{
