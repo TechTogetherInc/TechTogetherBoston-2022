@@ -8,7 +8,7 @@ a:link {
     text-decoration: none;
 }
 
-.FAQ body, button {
+body, button {
     font-family: 'Barlow', sans-serif;
 }
 
@@ -280,7 +280,7 @@ width: 30%;
     font-size: 100px;
 }
 
-.hack-info h3 {
+.hack-info h2 {
     color: white;
     font-size: 50px;
     font-weight: 200;
@@ -407,6 +407,86 @@ div .ghost-3 {
     cursor: pointer;
   }
 
+  /* style for the background */
+.background_sponsor{
+    background: linear-gradient(#9884CC, #AF7BA0, #C47378);
+}
+
+/* button and rounded button styles */
+.button{
+    border: none; 
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20%;
+    height: auto;
+}
+
+.rounded{
+    border-radius: 25px;
+}
+
+/* style for the register now button */
+.register{
+    background-color: #D36C5A;
+    color: white;
+    font-size: 120%;
+}
+
+/* syle for bats */
+.bat{
+    text-align: right;
+}
+
+/* style for witch and sponsors */
+.witch_sponsor{
+    display: flex;
+}
+
+.witch{
+    position: relative;
+    width: 100%;
+    left: 15%;
+    bottom: 10%;
+
+}
+
+.sponsors{
+    text-align: center;
+    font-size: 160%;
+}
+
+/* .sponsor_logos{
+    box-sizing: content-box;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap; 
+} 
+
+.sponsor_logos > div{
+    margin: 24px;
+    border: 1px solid #777;
+    background-color: 66B6CC;
+} */
+
+/* countdown section */
+.countdown{
+    text-align: center;
+    color: white;
+    padding: 10%;
+    margin: 10px;
+}
+
+.time{
+    font-size: 400%;
+    font-weight: 300%;
+}
+
+.bucket{
+    text-align: right;
+}
+
+
 
   /* Footer Styling */
  footer {
@@ -423,6 +503,10 @@ div .ghost-3 {
     color: white;
  }
 
+ footer a span {
+    display: none;
+ }
+
  .icons {
     font-size: 40px;
  }
@@ -436,8 +520,32 @@ div .ghost-3 {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
- 
-  
+
+  @media screen and (max-width: 750px) {
+    .mlh-logo img {
+        width: 50px;
+    }
+.ghost-1, .ghost-2 {display: none;}
+.hack-info {
+    text-align: center;
+}
+.hack-info h1 {font-size: 50px;}
+.hack-info h2 {font-size: 25px;}
+.landing-section ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.byte {
+    display: flex;
+    justify-content: center;
+}
+
+  }
+
+  @media screen and (max-width: 525px) {
+   .mlh-logo img {display: none;}
+   .bats {display: none;}
+  }
 
 
 
