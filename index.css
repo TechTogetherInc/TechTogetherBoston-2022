@@ -345,6 +345,19 @@ body, button {
         text-align: center;
         box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
     }
+
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1.2rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-desc {
+        padding-top: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1rem;
+    }
     
     .VOLUNTEER .VOLUNTEER-card-btn {
         padding-top: 4vw;
@@ -386,10 +399,17 @@ body, button {
         box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
     }
 
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1.3rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
     .VOLUNTEER .VOLUNTEER-card-desc {
         padding-top: 1vw;
         padding-left: 2vw;
         padding-right: 2vw;
+        font-size: 1rem;
     }
     
     .VOLUNTEER .VOLUNTEER-card-btn {
@@ -398,6 +418,52 @@ body, button {
         justify-content: center;
     }
 }
+
+/* desktop screens */
+
+@media screen and (min-width: 1025px) {
+    .VOLUNTEER .VOLUNTEER-cards-container {
+        padding-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card {
+        margin: 3vw;
+        padding: 2vw;
+        width: 35%;
+        border: solid 1px #727AD3;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1.6rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-desc {
+        padding-top: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.2rem;
+    }
+    
+    .VOLUNTEER .VOLUNTEER-card-btn {
+        padding-top: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 
 /* Landing page styling */
 
