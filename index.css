@@ -942,6 +942,7 @@ div .ghost-3 {
   @media screen and (max-width: 525px) {
    .mlh-logo img {display: none;}
    .bats {display: none;}
+   #main {width: 50%;}
   }
 
 
