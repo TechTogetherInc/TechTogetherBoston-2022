@@ -419,6 +419,7 @@ div .ghost-3 {
     padding-right: 20px;
     width: 20%;
     height: auto;
+    margin-top: 5%;
 }
 
 .rounded{
@@ -471,12 +472,17 @@ div .ghost-3 {
     background-color: 66B6CC;
 }
 
+/* section for ttb starts in */
+.starts{
+    margin-bottom: 8%;
+}
+
 /* countdown section */
 .countdown{
     text-align: center;
     color: white;
     padding: 10%;
-    margin: 10px;
+    margin-bottom: 8%;
 }
 
 .time{
