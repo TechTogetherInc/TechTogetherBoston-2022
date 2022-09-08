@@ -647,94 +647,6 @@ div .ghost-3 {
   .openbtn {
     cursor: pointer;
   }
-/* style for the background */
-.background_sponsor{
-    background: linear-gradient(#9884CC, #AF7BA0, #C47378);
-}
-
-/* button and rounded button styles */
-.button{
-    border: none; 
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 20%;
-    height: auto;
-    margin-top: 7%;
-}
-
-.rounded{
-    border-radius: 25px;
-}
-
-/* style for the register now button */
-.register{
-    background-color: #D36C5A;
-    color: white;
-    font-size: 120%;
-}
-
-/* syle for bats */
-.bat{
-    text-align: right;
-}
-
-/* style for witch and sponsors */
-.witch_sponsor{
-    display: flex;
-}
-
-.witch{
-    position: relative;
-    /* width: 100%; */
-    left: 15%;
-    /* bottom: 10%; */
-}
-
-.sponsors{
-    text-align: center;
-    font-size: 160%;
-}
-
-.sponsor_logos{
-    padding-top: 5vh;
-    margin-left: 20%;
-    margin-right: auto;
-    display: inline-flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    /* padding: 3vh; */
-    width: 80%;
-} 
-
-.sponsor_logos > div{
-    margin: 24px;
-    border: 1px solid #777;
-    background-color: 66B6CC;
-}
-
-/* section for ttb starts in */
-.starts{
-    margin-bottom: 8%;
-}
-
-/* countdown section */
-.countdown{
-    text-align: center;
-    color: white;
-    padding: 10%;
-    margin-bottom: 8%;
-}
-
-.time{
-    padding: 2%;
-    font-size: 400%;
-    font-weight: 300%;
-}
-
-.bucket{
-    text-align: right;
-}
 
   /* style for the background */
 .background_sponsor{
@@ -747,7 +659,7 @@ div .ghost-3 {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
@@ -759,7 +671,8 @@ div .ghost-3 {
 .register{
     background-color: #D36C5A;
     color: white;
-    font-size: 120%;
+    font-size: 140%;
+    margin-top: 5%;
 }
 
 /* syle for bats */
@@ -768,33 +681,13 @@ div .ghost-3 {
 }
 
 /* style for witch and sponsors */
-.witch_sponsor{
+/* .witch_sponsor{
     display: flex;
 }
 
 .witch{
-    position: relative;
-    width: 100%;
-    left: 15%;
-    bottom: 10%;
-}
-
-.sponsors{
-    text-align: center;
-    font-size: 160%;
-}
-
-/* .sponsor_logos{
-    box-sizing: content-box;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap; 
-} 
-
-.sponsor_logos > div{
-    margin: 24px;
-    border: 1px solid #777;
-    background-color: 66B6CC;
+    max-width: 20%;
+    height: auto;
 } */
 
 /* countdown section */
@@ -806,14 +699,53 @@ div .ghost-3 {
 }
 
 .time{
-    font-size: 400%;
+    font-size: 500%;
     font-weight: 300%;
+}
+
+/* .sponsors{
+    text-align: center;
+    font-size: 160%;
+}
+
+.sponsor_logos{
+    padding-top: 5vh;
+    margin-left: 20%;
+    margin-right: auto;
+    display: inline-flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 3vh;
+    width: 80%;
+} 
+
+.sponsor_logos > div{
+    margin: 24px;
+    border: 1px solid #777;
+    background-color: 66B6CC;
+} */
+
+/* section for ttb starts in */
+.starts{
+    margin-bottom: 5%;
+    font-size: 250%;
 }
 
 .bucket{
     text-align: right;
 }
 
+@media screen and (max-width: 750px) {
+   .register{font-size: 100%;}
+   .time{font-size: 300%;}
+   .starts{font-size: 150%;}
+  }
+
+  @media screen and (max-width: 600px) {
+    .register{font-size: 60%;}
+    .button{min-width: 30%;}
+   }
+ 
 
 
   /* Footer Styling */
