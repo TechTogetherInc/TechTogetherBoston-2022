@@ -396,6 +396,9 @@ body, button {
         border: solid 1px #727AD3;
         border-radius: 8px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
     }
 
