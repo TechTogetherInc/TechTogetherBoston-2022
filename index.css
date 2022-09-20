@@ -708,11 +708,6 @@ div .ghost-3 {
     margin: 10px;
 }
 
-.time{
-    font-size: 500%;
-    font-weight: 300%;
-}
-
 li{
     display: inline-block;
     font-size: 150%;
@@ -759,8 +754,8 @@ li span{
 
 @media screen and (max-width: 750px) {
    .register{font-size: 100%;}
-   li span{font-size: 250%;}
-   li{font-size: 90%;}
+   li span{font-size: 160%;}
+   li{font-size: 70%;}
    .starts{font-size: 150%;}
   }
 
