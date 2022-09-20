@@ -676,6 +676,7 @@ div .ghost-3 {
     color: white;
     font-size: 140%;
     margin-top: 5%;
+    cursor: pointer;
 }
 
 /* syle for bats */
@@ -704,6 +705,18 @@ div .ghost-3 {
 .time{
     font-size: 500%;
     font-weight: 300%;
+}
+
+li{
+    display: inline-block;
+    font-size: 150%;
+    font-weight: 300%;
+    padding-right: 3%;
+}
+
+li span{
+    display: block;
+    font-size: 350%;
 }
 
 /* .sponsors{
@@ -740,7 +753,8 @@ div .ghost-3 {
 
 @media screen and (max-width: 750px) {
    .register{font-size: 100%;}
-   .time{font-size: 300%;}
+   li span{font-size: 250%;}
+   li{font-size: 90%;}
    .starts{font-size: 150%;}
   }
 
@@ -752,7 +766,8 @@ div .ghost-3 {
 @media screen and (max-width: 470px) {
     .register{font-size: 60%;}
     .button{min-width: 40%;}
-    .time{font-size: 200%;}
+    li span{font-size: 100%;}
+    li{font-size: 30%;}
     .starts{font-size: 100%;}
    }
 
