@@ -717,7 +717,7 @@ li{
 
 li span{
     display: block;
-    font-size: 350%;
+    font-size: 300%;
 }
 
 /* .sponsors{
@@ -754,8 +754,8 @@ li span{
 
 @media screen and (max-width: 750px) {
    .register{font-size: 100%;}
-   li span{font-size: 160%;}
-   li{font-size: 70%;}
+   li span{font-size: 250%;}
+   li{font-size: 100%;}
    .starts{font-size: 150%;}
   }
 
@@ -767,8 +767,8 @@ li span{
 @media screen and (max-width: 470px) {
     .register{font-size: 60%;}
     .button{min-width: 40%;}
-    li span{font-size: 100%;}
-    li{font-size: 30%;}
+    li span{font-size: 200%;}
+    li{font-size: 50%;}
     .starts{font-size: 100%;}
    }
 
