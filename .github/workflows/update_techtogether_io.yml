@@ -18,9 +18,9 @@ jobs:
       - name: Update module
         run: |
           git submodule update --init --recursive --checkout -f --remote -- "techtogetherboston"
-          git config --global user.name "TechTogether Boston 2022"
-          git config --global user.email "noreply@github.com"
-          git commit -am "deploy: ${{github.repository}} - ${{github.sha}}"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "deploy: ${{github.repository}} - ${{github.sha}}" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
           git push
 
 
