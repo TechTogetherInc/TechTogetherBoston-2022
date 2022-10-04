@@ -690,16 +690,6 @@ div .ghost-3 {
     text-align: right;
 }
 
-/* style for witch and sponsors */
-/* .witch_sponsor{
-    display: flex;
-}
-
-.witch{
-    max-width: 20%;
-    height: auto;
-} */
-
 /* countdown section */
 .countdown{
     text-align: center;
@@ -720,15 +710,15 @@ li span{
     font-size: 300%;
 }
 
-/* .sponsors{
+.sponsors{
     text-align: center;
     font-size: 160%;
 }
 
 .sponsor_logos{
     padding-top: 5vh;
-    margin-left: 20%;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     display: inline-flex;
     flex-wrap: wrap; 
     justify-content: center;
@@ -736,11 +726,18 @@ li span{
     width: 80%;
 } 
 
-.sponsor_logos > div{
-    margin: 24px;
-    border: 1px solid #777;
-    background-color: 66B6CC;
-} */
+div a img{
+    border: none;
+    filter: gray;
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;  
+}
+
+div a img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.05);
+    }
 
 /* section for ttb starts in */
 .starts{
