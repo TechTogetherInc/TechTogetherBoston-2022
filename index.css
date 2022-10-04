@@ -690,6 +690,12 @@ div .ghost-3 {
     text-align: right;
 }
 
+/* style for the witch hat */
+.witch_hat{
+    text-align: center;
+    margin-right: 35%;
+}
+
 /* countdown section */
 .countdown{
     text-align: center;
@@ -715,22 +721,23 @@ li span{
     font-size: 160%;
 }
 
-.sponsor_logos{
+.sponsor_logo{
     padding-top: 5vh;
     margin-left: 10%;
     margin-right: 10%;
     display: inline-flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
     padding: 3vh;
     width: 80%;
-} 
+}
 
 div a img{
     border: none;
     filter: gray;
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .8s ease-in-out;  
+    -webkit-transition: all .8s ease-in-out; 
+    max-width: 150%; 
 }
 
 div a img:hover {
@@ -745,21 +752,32 @@ div a img:hover {
     font-size: 250%;
 }
 
+/* section for the bucket */
 .bucket{
     text-align: right;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 810px) {
    .register{font-size: 100%;}
    li span{font-size: 250%;}
    li{font-size: 100%;}
    .starts{font-size: 150%;}
+   img.img{max-width: 190px;max-height: 65px;}
+    img.img_m{ max-width: 270px;max-height: 65px;}
+    .sponsor_logo div{
+    max-width: 50%;
+}
   }
 
 @media screen and (max-width: 600px) {
     .register{font-size: 70%;}
     .button{min-width: 30%;}
-   }
+    img.img{
+        max-width: 120px;max-height: 65px;}
+    img.img_m{ max-width: 200px;max-height: 65px;}
+    .sponsor_logo div{
+        max-width: 50%;
+    }}
 
 @media screen and (max-width: 470px) {
     .register{font-size: 60%;}
