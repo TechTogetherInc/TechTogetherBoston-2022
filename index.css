@@ -248,6 +248,12 @@ width: 30%;
 
 }
 
+/* TTB Logo */
+
+#main {
+    width: 75%;
+}
+
 /* Logo styling */
 
 .landing-section ul {
@@ -277,12 +283,12 @@ width: 30%;
 
 .hack-info h1 {
     color: white;
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .hack-info h2 {
     color: white;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 200;
     margin-top: 1em;
     
@@ -685,8 +691,8 @@ div .ghost-3 {
 .hack-info {
     text-align: center;
 }
-.hack-info h1 {font-size: 50px;}
-.hack-info h2 {font-size: 25px;}
+.hack-info h1 {font-size: 35px;}
+.hack-info h2 {font-size: 13px;}
 .landing-section ul {
     display: flex;
     justify-content: space-evenly;
@@ -699,8 +705,9 @@ div .ghost-3 {
   }
 
   @media screen and (max-width: 525px) {
-   .mlh-logo img {display: none;}
+   /* .mlh-logo img {display: none;} */
    .bats {display: none;}
+   #main {width: 50%;}
   }
 
 
