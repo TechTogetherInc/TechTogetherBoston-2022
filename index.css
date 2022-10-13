@@ -223,6 +223,12 @@ body, button {
     }
 }
 
+/* Schedule styling */
+#event-agenda {
+    background-color: #41477F;
+    color: white;
+  }
+
 
 /* Landing page styling */
 
