@@ -18,6 +18,9 @@ body, button {
 .ABOUT {
     background: linear-gradient(#0B0E1E, #41477F);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ABOUT .ABOUT-heading {
@@ -34,22 +37,64 @@ body, button {
 }
 
 .ABOUT .ABOUT-text-contents {
-    text-align: justify;
+    width: 70vw;
+    text-align: center;
     line-height: 150%;
     margin-left: auto;
     margin-right: auto;
-    width: 100vh;
     padding-top: 2vh;
 }
 
 .ABOUT .ABOUT-video {
+    width: 70vw; /* 72vw */
+    height: 52vw;
     margin-left: auto;
     margin-right: auto;
-    width: 100vh;
-    height: 56.25vh;
     padding-top: 5vh;
     padding-bottom: 10vh;
     border: none;
+}
+
+/* mobile screens */
+
+@media screen and (min-width: 320px) {
+    .ABOUT .ABOUT-video {
+        width: 70vw; /* 72vw */
+        height: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border: none;
+    }
+}
+
+/* tablet screens */
+
+@media screen and (min-width: 481px) {
+    .ABOUT .ABOUT-video {
+        width: 70vw; /* 72vw */
+        height: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border: none;
+    }
+}
+
+/* laptop screens */
+
+@media screen and (min-width: 769px) {
+    .ABOUT .ABOUT-video {
+        width: 70vw; /* 72vw */
+        height: 52vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border: none;
+    }
 }
 
 
@@ -58,6 +103,7 @@ body, button {
 .FAQ {
     background: linear-gradient(#41477F, #727BD7);
     color: white;
+
 }
 
 .FAQ .FAQ-row {
@@ -108,67 +154,6 @@ body, button {
     transition: max-height 0.2s ease-in-out;
     margin: 1vh 5vh;
 }
-
-/* Volunteer */
-
-.VOLUNTEER {
-    background: linear-gradient(#727BD7, #9884CC);
-    color: white;
-}
-
-.VOLUNTEER .VOLUNTEER-heading {
-    text-align: center;
-    padding-top: 10vh;
-}
-
-.VOLUNTEER .VOLUNTEER-cards-container {
-    padding-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 3vh;
-}
-
-.VOLUNTEER .VOLUNTEER-card {
-    margin: 5vh;
-    padding: 3vh;
-    width: 30%;
-    border: solid 1px #727AD3;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
-}
-
-.VOLUNTEER .VOLUNTEER-card-title {
-    font-size: 1.5rem;;
-    font-weight: 800;
-    text-shadow: 2px 2px rgba(0, 0, 0, 25%);
-}
-
-.VOLUNTEER .VOLUNTEER-card-desc {
-    padding-top: 2vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
-}
-
-.VOLUNTEER .VOLUNTEER-card-btn {
-    padding-top: 3vh;
-    display: flex;
-    justify-content: center;
-}
-
-.VOLUNTEER .VOLUNTEER-card-btn-text {
-    padding: 1vh 2vh;
-    background-color: white;
-    border-radius: 5vh;
-    color: #353F95;
-    font-size: 1.2rem;;
-    font-weight: 800;
-}
-
 
 
 /* mobile screens */
@@ -223,11 +208,272 @@ body, button {
     }
 }
 
+
+/* Volunteer */
+
+.VOLUNTEER {
+    background: linear-gradient(#727BD7, #9884CC);
+    color: white;
+}
+
+.VOLUNTEER .VOLUNTEER-heading {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.VOLUNTEER .VOLUNTEER-cards-container {
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.VOLUNTEER .VOLUNTEER-card {
+    margin: 3vw;
+    padding: 2vw;
+    width: 35%;
+    border: solid 1px #727AD3;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+}
+
+.VOLUNTEER .VOLUNTEER-card-title {
+    font-size: 1.5rem;;
+    font-weight: 800;
+    text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+}
+
+.VOLUNTEER .VOLUNTEER-card-desc {
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.VOLUNTEER .VOLUNTEER-card-btn {
+    padding-top: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.VOLUNTEER .VOLUNTEER-card-btn-text {
+    padding: 1vw 2vw;
+    background-color: white;
+    border-radius: 5vw;
+    color: #353F95;
+    font-size: 1.2rem;;
+    font-weight: 800;
+}
+
+
+/* mobile screens */
+
+@media screen and (min-width: 320px) {
+    .VOLUNTEER .VOLUNTEER-cards-container {
+        padding-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card {
+        margin: 3vw;
+        padding: 5vw;
+        width: 80%;
+        border: solid 1px #727AD3;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-desc {
+        padding-top: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 0.7rem;
+    }
+    
+    .VOLUNTEER .VOLUNTEER-card-btn {
+        padding-top: 4vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-btn-text {
+        padding: 1vw 2vw;
+        background-color: white;
+        border-radius: 5vw;
+        color: #353F95;
+        font-size: 0.7rem;;
+        font-weight: 800;
+    }
+}
+
+/* tablet screens */
+
+@media screen and (min-width: 481px) {
+    .VOLUNTEER .VOLUNTEER-cards-container {
+        padding-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card {
+        margin: 3vw;
+        padding: 5vw;
+        width: 80%;
+        border: solid 1px #727AD3;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1.2rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-desc {
+        padding-top: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1rem;
+    }
+    
+    .VOLUNTEER .VOLUNTEER-card-btn {
+        padding-top: 4vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-btn-text {
+        padding: 1vw 2vw;
+        background-color: white;
+        border-radius: 5vw;
+        color: #353F95;
+        font-size: 1rem;;
+        font-weight: 800;
+    }
+}
+
+/* laptop screens */
+
+@media screen and (min-width: 769px) {
+    .VOLUNTEER .VOLUNTEER-cards-container {
+        padding-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card {
+        margin: 3vw;
+        padding: 2vw;
+        width: 35%;
+        border: solid 1px #727AD3;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1.3rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-desc {
+        padding-top: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1rem;
+    }
+    
+    .VOLUNTEER .VOLUNTEER-card-btn {
+        padding-top: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* desktop screens */
+
+@media screen and (min-width: 1025px) {
+    .VOLUNTEER .VOLUNTEER-cards-container {
+        padding-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    .VOLUNTEER .VOLUNTEER-card {
+        margin: 3vw;
+        padding: 2vw;
+        width: 35%;
+        border: solid 1px #727AD3;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-title {
+        font-size: 1.6rem;;
+        font-weight: 800;
+        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
+    }
+
+    .VOLUNTEER .VOLUNTEER-card-desc {
+        padding-top: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.2rem;
+    }
+    
+    .VOLUNTEER .VOLUNTEER-card-btn {
+        padding-top: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 /* Schedule styling */
 #event-agenda {
     background-color: #41477F;
     color: white;
   }
+
 /* Landing page styling */
 
 /* Background gradient */
@@ -416,83 +662,6 @@ div .ghost-3 {
   .openbtn {
     cursor: pointer;
   }
-/* style for the background */
-.background_sponsor{
-    background: linear-gradient(#9884CC, #AF7BA0, #C47378);
-}
-
-/* button and rounded button styles */
-.button{
-    border: none; 
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 20%;
-    height: auto;
-}
-
-.rounded{
-    border-radius: 25px;
-}
-
-/* style for the register now button */
-.register{
-    background-color: #D36C5A;
-    color: white;
-    font-size: 120%;
-}
-
-/* syle for bats */
-.bat{
-    text-align: right;
-}
-
-/* style for witch and sponsors */
-.witch_sponsor{
-    display: flex;
-}
-
-.witch{
-    position: relative;
-    width: 100%;
-    left: 15%;
-    bottom: 10%;
-}
-
-.sponsors{
-    text-align: center;
-    font-size: 160%;
-}
-
-.sponsor_logos{
-    box-sizing: content-box;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap; 
-} 
-
-.sponsor_logos > div{
-    margin: 24px;
-    border: 1px solid #777;
-    background-color: 66B6CC;
-}
-
-/* countdown section */
-.countdown{
-    text-align: center;
-    color: white;
-    padding: 10%;
-    margin: 10px;
-}
-
-.time{
-    font-size: 400%;
-    font-weight: 300%;
-}
-
-.bucket{
-    text-align: right;
-}
 
   /* style for the background */
 .background_sponsor{
@@ -505,7 +674,7 @@ div .ghost-3 {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
@@ -517,7 +686,9 @@ div .ghost-3 {
 .register{
     background-color: #D36C5A;
     color: white;
-    font-size: 120%;
+    font-size: 140%;
+    margin-top: 5%;
+    cursor: pointer;
 }
 
 /* syle for bats */
@@ -525,35 +696,11 @@ div .ghost-3 {
     text-align: right;
 }
 
-/* style for witch and sponsors */
-.witch_sponsor{
-    display: flex;
-}
-
-.witch{
-    position: relative;
-    width: 100%;
-    left: 15%;
-    bottom: 10%;
-}
-
-.sponsors{
+/* style for the witch hat */
+.witch_hat{
     text-align: center;
-    font-size: 160%;
+    margin-right: 35%;
 }
-
-/* .sponsor_logos{
-    box-sizing: content-box;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap; 
-} 
-
-.sponsor_logos > div{
-    margin: 24px;
-    border: 1px solid #777;
-    background-color: 66B6CC;
-} */
 
 /* countdown section */
 .countdown{
@@ -563,58 +710,16 @@ div .ghost-3 {
     margin: 10px;
 }
 
-.time{
-    font-size: 400%;
+li{
+    display: inline-block;
+    font-size: 150%;
     font-weight: 300%;
+    padding-right: 3%;
 }
 
-.bucket{
-    text-align: right;
-}
-
-
-  /* style for the background */
-.background_sponsor{
-    background: linear-gradient(#9884CC, #AF7BA0, #C47378);
-}
-
-/* button and rounded button styles */
-.button{
-    border: none; 
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 20%;
-    height: auto;
-}
-
-.rounded{
-    border-radius: 25px;
-}
-
-/* style for the register now button */
-.register{
-    background-color: #D36C5A;
-    color: white;
-    font-size: 120%;
-}
-
-/* syle for bats */
-.bat{
-    text-align: right;
-}
-
-/* style for witch and sponsors */
-.witch_sponsor{
-    display: flex;
-}
-
-.witch{
-    position: relative;
-    width: 100%;
-    left: 15%;
-    bottom: 10%;
-
+li span{
+    display: block;
+    font-size: 300%;
 }
 
 .sponsors{
@@ -622,36 +727,71 @@ div .ghost-3 {
     font-size: 160%;
 }
 
-/* .sponsor_logos{
-    box-sizing: content-box;
-    width: 100%;
+.sponsor_logo{
+    padding-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
     display: inline-flex;
-    flex-wrap: wrap; 
-} 
-
-.sponsor_logos > div{
-    margin: 24px;
-    border: 1px solid #777;
-    background-color: 66B6CC;
-} */
-
-/* countdown section */
-.countdown{
-    text-align: center;
-    color: white;
-    padding: 10%;
-    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3vh;
+    width: 80%;
 }
 
-.time{
-    font-size: 400%;
-    font-weight: 300%;
+div a img{
+    border: none;
+    filter: gray;
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out; 
+    max-width: 150%; 
 }
 
+div a img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.05);
+    }
+
+/* section for ttb starts in */
+.starts{
+    margin-bottom: 5%;
+    font-size: 250%;
+}
+
+/* section for the bucket */
 .bucket{
     text-align: right;
 }
 
+@media screen and (max-width: 810px) {
+   .register{font-size: 100%;}
+   li span{font-size: 250%;}
+   li{font-size: 100%;}
+   .starts{font-size: 150%;}
+   img.img{max-width: 190px;max-height: 65px;}
+    img.img_m{ max-width: 270px;max-height: 65px;}
+    .sponsor_logo div{
+    max-width: 50%;
+}
+  }
+
+@media screen and (max-width: 600px) {
+    .register{font-size: 70%;}
+    .button{min-width: 30%;}
+    img.img{
+        max-width: 120px;max-height: 65px;}
+    img.img_m{ max-width: 200px;max-height: 65px;}
+    .sponsor_logo div{
+        max-width: 50%;
+    }}
+
+@media screen and (max-width: 470px) {
+    .register{font-size: 60%;}
+    .button{min-width: 40%;}
+    li span{font-size: 200%;}
+    li{font-size: 50%;}
+    .starts{font-size: 100%;}
+   }
 
 
   /* Footer Styling */
