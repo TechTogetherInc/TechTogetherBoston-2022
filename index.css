@@ -306,7 +306,7 @@ width: 30%;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .registerbtn {
@@ -317,6 +317,7 @@ width: 30%;
     border: none;
     margin-top: 3em;
     margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .registerbtn:hover {
