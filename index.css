@@ -504,10 +504,6 @@ div a img:hover {
     text-align: right;
 }
 
-
-.capital {
-    margin-left: 10%;
-
 @media screen and (max-width: 810px) {
    .register{font-size: 100%;}
    li span{font-size: 250%;}
@@ -537,7 +533,6 @@ div a img:hover {
     li{font-size: 50%;}
     .starts{font-size: 100%;}
    }
-
 
 
   /* Footer Styling */
