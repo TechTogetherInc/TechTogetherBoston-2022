@@ -499,7 +499,9 @@ div .ghost-3 {
     text-align: right;
 }
 
-
+.capital {
+    margin-left: 10%;
+}
 
   /* Footer Styling */
  footer {
