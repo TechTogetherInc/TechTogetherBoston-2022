@@ -83,6 +83,10 @@ var x = setInterval(function(){
       var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-      document.getElementById("time").innerHTML = days + " : " + hours + " : "
-+ minutes + " : " + seconds;
+      document.getElementById("time").innerHTML = "";
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+document.getElementById("hours").innerHTML = hours;
   }, 1000);
