@@ -1,0 +1,26 @@
+name: Update MLH/techtogether.io
+on: [push]
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.TTINC_DEPLOY_KEY }}
+
+      - uses: actions/checkout@v3
+        with:
+          repository: 'mlh/techtogether.io'
+          ssh-key: ${{ secrets.TTINC_DEPLOY_KEY }}
+          fetch-depth: 1
+          submodules: true
+
+      - name: Update module
+        run: |
+          git submodule update --init --recursive --checkout -f --remote -- "techtogetherboston"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "deploy: ${{github.repository}} - ${{github.sha}}" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
+          git push
+
+
