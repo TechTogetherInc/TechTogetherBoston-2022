@@ -479,12 +479,6 @@ li span{
     width: 80%;
 }
 
-/* Capital One sponsor logo spacing  */
-
-.capital-one {
-    margin-left: 10%;
- }   
-
 div a img{
     border: none;
     filter: gray;
@@ -509,7 +503,6 @@ div a img:hover {
 .bucket{
     text-align: right;
 }
-
 
 @media screen and (max-width: 810px) {
    .register{font-size: 100%;}
