@@ -2,10 +2,10 @@
 .background_sponsor{
     background: linear-gradient(#9884CC, #AF7BA0, #C47378);
 }
- 
+
 /* button and rounded button styles */
 .button{
-    border: none; 
+    border: none;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -34,9 +34,7 @@
     display: flex;
 }
 
-/* to do
-figure out how to display the sponsors and the hat in the center
-*/
+/* style for witch */
 .witch{
     position: relative;
     width: 100%;
@@ -56,7 +54,7 @@ figure out how to display the sponsors and the hat in the center
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    
+
 }
 
 .sponsor_logos > div{
