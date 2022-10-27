@@ -101,7 +101,7 @@ body, button {
 /* FAQ */
 
 .FAQ {
-    background: linear-gradient(#41477F, #727BD7);
+    background: linear-gradient(#41477F, #9884CC, #9884CC, #9884CC);
     color: white;
 }
 
@@ -207,265 +207,11 @@ body, button {
     }
 }
 
-
-/* Volunteer */
-
-.VOLUNTEER {
-    background: linear-gradient(#727BD7, #9884CC);
+/* Schedule styling */
+#event-agenda {
+    background-color: #41477F;
     color: white;
-}
-
-.VOLUNTEER .VOLUNTEER-heading {
-    text-align: center;
-    padding-top: 10vh;
-}
-
-.VOLUNTEER .VOLUNTEER-cards-container {
-    padding-top: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2vw;
-}
-
-.VOLUNTEER .VOLUNTEER-card {
-    margin: 3vw;
-    padding: 2vw;
-    width: 35%;
-    border: solid 1px #727AD3;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
-}
-
-.VOLUNTEER .VOLUNTEER-card-title {
-    font-size: 1.5rem;;
-    font-weight: 800;
-    text-shadow: 2px 2px rgba(0, 0, 0, 25%);
-}
-
-.VOLUNTEER .VOLUNTEER-card-desc {
-    padding-top: 1vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
-.VOLUNTEER .VOLUNTEER-card-btn {
-    padding-top: 2vw;
-    display: flex;
-    justify-content: center;
-}
-
-.VOLUNTEER .VOLUNTEER-card-btn-text {
-    padding: 1vw 2vw;
-    background-color: white;
-    border-radius: 5vw;
-    color: #353F95;
-    font-size: 1.2rem;;
-    font-weight: 800;
-}
-
-
-/* mobile screens */
-
-@media screen and (min-width: 320px) {
-    .VOLUNTEER .VOLUNTEER-cards-container {
-        padding-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 2vw;
-    }
-
-    .VOLUNTEER .VOLUNTEER-card {
-        margin: 3vw;
-        padding: 5vw;
-        width: 80%;
-        border: solid 1px #727AD3;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-title {
-        font-size: 1rem;;
-        font-weight: 800;
-        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-desc {
-        padding-top: 1vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        font-size: 0.7rem;
-    }
-    
-    .VOLUNTEER .VOLUNTEER-card-btn {
-        padding-top: 4vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-btn-text {
-        padding: 1vw 2vw;
-        background-color: white;
-        border-radius: 5vw;
-        color: #353F95;
-        font-size: 0.7rem;;
-        font-weight: 800;
-    }
-}
-
-/* tablet screens */
-
-@media screen and (min-width: 481px) {
-    .VOLUNTEER .VOLUNTEER-cards-container {
-        padding-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 2vw;
-    }
-
-    .VOLUNTEER .VOLUNTEER-card {
-        margin: 3vw;
-        padding: 5vw;
-        width: 80%;
-        border: solid 1px #727AD3;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-title {
-        font-size: 1.2rem;;
-        font-weight: 800;
-        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-desc {
-        padding-top: 1vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        font-size: 1rem;
-    }
-    
-    .VOLUNTEER .VOLUNTEER-card-btn {
-        padding-top: 4vw;
-        display: flex;
-        justify-content: center;
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-btn-text {
-        padding: 1vw 2vw;
-        background-color: white;
-        border-radius: 5vw;
-        color: #353F95;
-        font-size: 1rem;;
-        font-weight: 800;
-    }
-}
-
-/* laptop screens */
-
-@media screen and (min-width: 769px) {
-    .VOLUNTEER .VOLUNTEER-cards-container {
-        padding-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 2vw;
-    }
-
-    .VOLUNTEER .VOLUNTEER-card {
-        margin: 3vw;
-        padding: 2vw;
-        width: 35%;
-        border: solid 1px #727AD3;
-        border-radius: 8px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-title {
-        font-size: 1.3rem;;
-        font-weight: 800;
-        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-desc {
-        padding-top: 1vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        font-size: 1rem;
-    }
-    
-    .VOLUNTEER .VOLUNTEER-card-btn {
-        padding-top: 2vw;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-/* desktop screens */
-
-@media screen and (min-width: 1025px) {
-    .VOLUNTEER .VOLUNTEER-cards-container {
-        padding-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 2vw;
-    }
-
-    .VOLUNTEER .VOLUNTEER-card {
-        margin: 3vw;
-        padding: 2vw;
-        width: 35%;
-        border: solid 1px #727AD3;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 10%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-title {
-        font-size: 1.6rem;;
-        font-weight: 800;
-        text-shadow: 2px 2px rgba(0, 0, 0, 25%);
-    }
-
-    .VOLUNTEER .VOLUNTEER-card-desc {
-        padding-top: 1vw;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        font-size: 1.2rem;
-    }
-    
-    .VOLUNTEER .VOLUNTEER-card-btn {
-        padding-top: 2vw;
-        display: flex;
-        justify-content: center;
-    }
-}
-
+  }
 
 
 /* Landing page styling */
@@ -482,7 +228,7 @@ body, button {
     background: url(./img/landing-background.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom 75% 25%;  
+    background-position: bottom 75% 25%;
 }
 
 /* Bats image */
@@ -535,7 +281,7 @@ width: 30%;
     font-size: 25px;
     font-weight: 200;
     margin-top: 1em;
-    
+
 }
 
 /* Register button styling */
@@ -544,7 +290,7 @@ width: 30%;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .registerbtn {
@@ -555,6 +301,7 @@ width: 30%;
     border: none;
     margin-top: 3em;
     margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .registerbtn:hover {
@@ -601,19 +348,19 @@ height: 246.71px;
         50% {
             transform: translate(-1px, 2px) rotate(-1deg);
         }
-      
+
     }
 
 /* Navigation Links */
 
 #mySidenav a {
-   padding: 25px; 
+   padding: 25px;
    width: 100px;
-   font-size: 25px; 
+   font-size: 25px;
    font-weight: bold;
    color: white;
-  } 
-  
+  }
+
 #mySidenav a img {
   height: 90px;
   width: 100px;
@@ -627,22 +374,22 @@ div .ghost-3 {
 /* sidebar menu */
 
 .sidebar {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; 
-    overflow-x: hidden; 
+    background-color: #111;
+    overflow-x: hidden;
     padding-top: 30px; /* content 60px from top */
     transition: 0.5s; /*slide effect */
   }
-  
+
   .sidebar a {
     display: block;
   }
-  
+
   /* close button (top right corner) */
   .sidebar .closebtn {
     position: absolute;
@@ -651,7 +398,7 @@ div .ghost-3 {
     font-size: 36px;
     margin-left: 50px;
   }
-  
+
   /* open button */
   .openbtn {
     cursor: pointer;
@@ -664,7 +411,7 @@ div .ghost-3 {
 
 /* button and rounded button styles */
 .button{
-    border: none; 
+    border: none;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -728,16 +475,18 @@ li span{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3vh;
+    padding: 5vh;
     width: 80%;
 }
 
 div a img{
+    padding-right: 20%;
+    padding-bottom: 5%;
     border: none;
     filter: gray;
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .8s ease-in-out; 
-    max-width: 150%; 
+    -webkit-transition: all .8s ease-in-out;
+    max-width: 150%;
 }
 
 div a img:hover {
@@ -815,7 +564,7 @@ div a img:hover {
     opacity: 0.7;
  }
   /* Responsive layout */
-  
+
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
@@ -847,7 +596,3 @@ div a img:hover {
    .bats {display: none;}
    #main {width: 50%;}
   }
-
-
-
-

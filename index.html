@@ -26,14 +26,14 @@
     <nav>
     <ul>
         <li><img id="main" class="openbtn" onclick="openNav()" src="./img/ttb-logo.svg" alt="TechTogether Boston logo"></li>
-        
+
         <!-- Bat image -->
-        
+
         <img class="bats" src="./img/bats.svg" alt="group of flying bats">
 
         <li class="mlh-logo"><a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a></li>
     </ul>
-    </nav>   
+    </nav>
         <!-- Side Navigation -->
 
     <div id="mySidebar" class="sidebar">
@@ -47,14 +47,14 @@
           </div>
       </div>
 
-     
-     
+
+
       <!-- Hackathon Information -->
 
     <section class="hack-info">
         <h1>TechTogether<br> Boston</h1>
         <h2>October 29-30, 2022 @ Boston University</h2>
-        <button class="registerbtn"><a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank">Register Now</a></button>
+        <button class="registerbtn"><a href="https://techtogether-boston-2023.devpost.com/" target="_blank">View Challenges</a></button>
     </section>
 
     <!-- Byte Images -->
@@ -100,9 +100,25 @@
       <p>Theme description</p>
     </div> -->
 
-    <!-- FAQ Section -->
 
-    <div class="FAQ" id="faq-section">
+    <!-- Schedule -->
+    <div
+  id="event-agenda"
+  data-ical-address="https://calendar.google.com/calendar/ical/5769e06fdb10eb18dc1317482e073e7f823aa9a18b094a8604bdaf83ef113443%40group.calendar.google.com/public/basic.ics"
+></div>
+<script
+  defer="defer"
+  src="https://hackathon-schedule.netlify.app/static/js/main.js"
+></script>
+<link
+  href="https://hackathon-schedule.netlify.app/static/css/main.css"
+  rel="stylesheet"
+/>
+
+
+  <!-- FAQ Section -->
+
+  <div class="FAQ" id="faq-section">
 
     <div class="FAQ">
 
@@ -126,7 +142,7 @@
               alt="FAQ-arrow-down"
             />
             <!-- the style for the arrows is just to see the arrow when background is white by deafult, erase later -->
-            
+
             <div class="FAQ-answer-div">
               <p class="FAQ-answer">
                 Your project will be submitted through Devpost. Click on the
@@ -253,6 +269,26 @@
             </div>
             <hr class="FAQ-hr" />
           </div>
+
+          <!-- Question 14 -->
+          <div class="FAQ-question-div">
+            <button class="FAQ-question-header">
+              Is TechTogether virtual?
+            </button>
+            <img
+              class="FAQ-arrow"
+              src="./img/arrow-down.svg"
+              alt="FAQ-arrow-down"
+            />
+            <div class="FAQ-answer-div">
+              <p class="FAQ-answer">
+                No. Although the Discord channel opens on Tuesday of the week
+                of the hackathon, nothing else about the event will be virtual.
+              </p>
+            </div>
+            <hr class="FAQ-hr" />
+          </div>
+
         </div>
         <!-- end of FAQ-column -->
 
@@ -401,92 +437,47 @@
             </div>
             <hr class="FAQ-hr" />
           </div>
-        </div>
+
         <!-- end of FAQ-column -->
       </div>
       <!-- end of FAQ-row -->
     </div>
     <!-- end of FAQ -->
 
-    <!-- Volunteer Section -->
-
-    <div class="VOLUNTEER">
-      <h1 class="VOLUNTEER-heading">Share it Forward</h1>
-      <div class="VOLUNTEER-cards-container">
-
-        <!-- Mentor Hackers -->
-        <div class="VOLUNTEER-card">
-          <h3 class="VOLUNTEER-card-title">Mentor Hacker 👨‍💻</h3>
-          <p class="VOLUNTEER-card-desc">
-            <!-- TODO: Replace with the description from programming team -->
-            Help our hackers brainstorm project ideas and squash programming bugs. A great role for professionals that want to volunteer for few hours and enjoy working 1:1 with hackers.
-          </p>
-          <!-- TODO: change to valid form link -->
-          <div class="VOLUNTEER-card-btn">
-            <a href="https://majorleaguehacking.typeform.com/to/bGY5835C" target="_blank">
-              <h3 class="VOLUNTEER-card-btn-text">Become a mentor</h3>
-            </a>
-          </div>
-        </div>
-
-        <!-- Workshop Hosts -->
-        <div class="VOLUNTEER-card">
-          <h3 class="VOLUNTEER-card-title">Workshop Host 🎤</h3>
-          <p class="VOLUNTEER-card-desc">
-            <!-- TODO: Replace with the description from programming team -->
-            Offer to host a workshop or speak at our upcoming hackathon. A great role for professionals that want to help teach our hackers new skills.
-          </p>
-          <!-- TODO: change to valid form link -->
-          <div class="VOLUNTEER-card-btn">
-            <a href="https://majorleaguehacking.typeform.com/to/bGY5835C" target="_blank">
-              <h3 class="VOLUNTEER-card-btn-text">Host a workshop</h3>
-            </a>
-          </div>
-        </div>
-
-        <!-- Volunteer -->
-        <div class="VOLUNTEER-card">
-          <h3 class="VOLUNTEER-card-title">Volunteer 🙌</h3>
-          <p class="VOLUNTEER-card-desc">
-            <!-- TODO: Replace with the description from programming team -->
-            Help out with the event set ups, and other logistic staffing such as workshop staffing, activity, and other tables e.g. mentor tables, and ask TTB table.
-          </p>
-          <!-- TODO: change to valid form link -->
-          <div class="VOLUNTEER-card-btn">
-            <a href="https://majorleaguehacking.typeform.com/to/bGY5835C" target="_blank">
-              <h3 class="VOLUNTEER-card-btn-text">Become a Volunteer</h3>
-            </a>
-          </div>
-        </div>
-
-        <!-- Judge -->
-        <div class="VOLUNTEER-card">
-          <h3 class="VOLUNTEER-card-title">Judge 🧑‍⚖️</h3>
-          <p class="VOLUNTEER-card-desc">
-            <!-- TODO: Replace with the description from programming team -->
-            Help TechTogether Boston score and provide feedback on the projects created at our hackathon. A great role for professionals that want to volunteer for 1-3 hours and enjoy looking through hackathon projects.
-          </p>
-          <!-- TODO: change to valid form link -->
-          <div class="VOLUNTEER-card-btn">
-            <a href="https://majorleaguehacking.typeform.com/to/bGY5835C" target="_blank">
-              <h3 class="VOLUNTEER-card-btn-text">Become a judge</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <!-- Sponsors section -->
     <div class="background_sponsor">
+
         <div class="bat"><img src="assets/bats.svg" alt="bats" width="35%"></div>
         <div class="witch_hat"><img src="assets/witch hat.svg" alt="witch hat" width="25%"></div>
         <div class="sponsors"><h1>Sponsors</h1></div>
 
        <div class="sponsor_logo">
-            <div><a href="https://balsamiq.com/" target="_blank" rel="noopener noreferrer"><img  class="img" src="assets/sponsorship logo/Balsamiq.svg" alt="Balsamiq logo" width="200" height="150"/></a></div>
-            <div><a href="https://azure.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer"><img class="img_m" src="assets/sponsorship logo/microsoft_azure_logo 2.png" alt="Microsoft logo" width="400" height="150"/></a></div>
-            <div><a href="https://mlh.io/" target="_blank" rel="noopener noreferrer"><img class="img" src="assets/sponsorship logo/Mlh-logo-color.svg" alt="MLH logo" width="200" height="150"/></a></div>
+            <div><a href="https://balsamiq.com/" target="_blank" rel="noopener noreferrer">
+              <img  class="img" src="assets/sponsorship logo/Balsamiq.svg" alt="Balsamiq logo" width="200" height="150"/></a></div>
+            <div><a href="https://azure.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">
+              <img class="img_m" src="assets/sponsorship logo/microsoft_azure_logo 2.png" alt="Microsoft logo" width="400" height="150"/>
+            </a></div>
+            <div><a href="https://mlh.io/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/Mlh-logo-color.svg" alt="MLH logo" width="200" height="150"/>
+            </a></div>
+            <div><a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/Capital One Logo.png" alt="Capital One logo" width="200" height="150">
+            </a></div>
+            <div><a href="https://www.cargurus.com/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/car gurus.svg" alt="Car Gurus logo" width="300" height="150"/>
+            </a></div>
+            <div><a href="https://circleci.com/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/circleci.svg" alt="circleCi logo" width="250" height="150"/>
+            </a></div>
+            <div><a href="https://www.pega.com/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/pegaSystems.svg" alt="PegaSystems logo" width="300" height="150"/>
+            </a></div>
+            <div><a href="https://www.slalombuild.com/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/slalom.png" alt="Slalom build logo" width="450" height="150"/>
+            </a></div>
+            <div><a href="https://www.statestreet.com/home.html" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="assets/sponsorship logo/state-street.svg" alt="State Street logo" width="250" height="150"/>
+            </a></div>
         </div>
 
     <!-- Countdown Section -->
@@ -499,14 +490,16 @@
           <li><span id="minutes"></span>MINUTES</li>
           <li><span id="seconds"></span>SECONDS</li>
         </ul>
-        <a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank" rel="noopener noreferrer"><button class="button rounded register">Register Now</button></a>
+        <a href="https://organize.mlh.io/participants/events/8321-techtogether-boston" target="_blank" rel="noopener noreferrer">
+          <button class="button rounded register">Register Now</button>
+      </a>
     </div>
 
 
     <!-- Footer Section -->
-    
+
     <footer class="footer-section">
-  
+
       <p>Still have questions? <br> Contact info@techtogether.io</p>
       <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Code of Conduct</a>
 
@@ -515,7 +508,7 @@
       <a href="https://www.facebook.com/TechTogetherBoston/" target="_blank"><i class="fa-brands fa-square-facebook"></i><span>Facebook</span></a>
       <a href="https://www.linkedin.com/company/techtogetherboston/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
       </section>
-      
+
   </footer>
 
     <script src="index.js"></script>
