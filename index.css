@@ -478,6 +478,10 @@ li span{
     padding: 5vh;
     width: 80%;
 }
+.sponsor_logo div{
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
 
 div a img{
     padding-right: 20%;
